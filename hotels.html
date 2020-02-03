@@ -21,21 +21,24 @@
 
     <main>
       <h1 class="visually-hidden">Поиск жилья в городе Седона</h1>
-      <!-- Форма для второго пул-реквеста
       <section>
         <h2 class="visually-hidden">Фильтр жилья</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Инфраструктура:</legend>
-            <input id="filter-pool" type="checkbox" name="pool" checked> <label for="filter-pool">Бассейн</label>
-            <input id="filter-parking" type="checkbox" name="parking"> <label for="filter-parking">Парковка</label>
-            <input id="filter-wifi" type="checkbox" name="wi-fi"> <label for="filter-wifi">Wi-fi</label>
+            <ul>
+              <li><input id="filter-pool" type="checkbox" value="pool" name="hotel-amenities" checked> <label for="filter-pool">Бассейн</label></li>
+              <li><input id="filter-parking" type="checkbox" value="parking" name="hotel-amenities"> <label for="filter-parking">Парковка</label></li>
+              <li><input id="filter-wifi" type="checkbox" value="wi-fi" name="hotel-amenities"> <label for="filter-wifi">Wi-fi</label></li>
+            </ul>
           </fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>
-            <input id="filter-hotel" type="checkbox" name="hotel" checked> <label for="filter-hotel">Гостиница</label>
-            <input id="filter-hostel" type="checkbox" name="hostel" checked> <label for="filter-hostel">Отель</label>
-            <input id="filter-apartment" type="checkbox" name="apartment" checked> <label for="filter-apartment">Апартаменты</label>
+            <ul>
+              <li><input id="filter-hotel" type="checkbox" value="hotel" name="hotel-type" checked> <label for="filter-hotel">Гостиница</label></li>
+              <li><input id="filter-hostel" type="checkbox" value="hostel" name="hotel-type" checked> <label for="filter-hostel">Отель</label></li>
+              <li><input id="filter-apartment" type="checkbox" value="apartment" name="hotel-type" checked> <label for="filter-apartment">Апартаменты</label></li>
+            </ul>
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки:</legend>
@@ -60,13 +63,12 @@
             <li><a href="#">По рейтингу</a></li>
             <li>
               <ul>
-                <li><a href="#"><img src="img/arrow-up.svg" wdith="11" height="10" alt="Сортировка от меньшего к большему"></a></li>
-                <li><a href="#"><img src="img/arrow-down.svg" wdith="11" height="10" alt="Сортировка от большего к меньшему"></a></li>
+                <li><a href="#"><img src="img/arrow-up.svg" width="11" height="10" alt="Сортировка от меньшего к большему"></a></li>
+                <li><a href="#"><img src="img/arrow-down.svg" width="11" height="10" alt="Сортировка от большего к меньшему"></a></li>
               </ul>
             </li>
           </ul>
       </section>
-    -->
 
       <section>
         <h2 class="visually-hidden">Список вариантов жилья</h2>
