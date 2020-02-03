@@ -20,17 +20,59 @@
     </header>
 
     <main>
-      <h1>Поиск жилья в городе Седона</h1>
+      <h1 class="visually-hidden">Поиск жилья в городе Седона</h1>
+      <!-- Форма для второго пул-реквеста
       <section>
-        <h2>Фильтр жилья</h2>
-        <!--Здесь могла бы быть Ваша форма-->
+        <h2 class="visually-hidden">Фильтр жилья</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <input id="filter-pool" type="checkbox" name="pool" checked> <label for="filter-pool">Бассейн</label>
+            <input id="filter-parking" type="checkbox" name="parking"> <label for="filter-parking">Парковка</label>
+            <input id="filter-wifi" type="checkbox" name="wi-fi"> <label for="filter-wifi">Wi-fi</label>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <input id="filter-hotel" type="checkbox" name="hotel" checked> <label for="filter-hotel">Гостиница</label>
+            <input id="filter-hostel" type="checkbox" name="hostel" checked> <label for="filter-hostel">Отель</label>
+            <input id="filter-apartment" type="checkbox" name="apartment" checked> <label for="filter-apartment">Апартаменты</label>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки:</legend>
+              <input id="filter-min" type="number" value="0" name="min"> <label class="visually-hidden" for="filter-min">Минимальная стоимость</label>
+              <input id="filter-max" type="number" value="3000" name="max"> <label class="visually-hidden" for="filter-max">Максимальная стоимость</label>
+              <div class="range-slider-track">
+                <div class="range-slider-pin range-slider-pin-min"></div>
+                <div class="range-slider-pin range-slider-pin-max"></div>
+              </div>
+            </fieldset>
+          <button type="submit">Найти</button>
+        </form>
       </section>
 
       <section>
-        <h2>Список вариантов жилья</h2>
+        <h2 class="visually-hidden">Сортировка вариантов жилья</h2>
+          <p>Найдено: <span>3</span></p>
+          <p>Сортировка:</p>
+          <ul>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+            <li>
+              <ul>
+                <li><a href="#"><img src="img/arrow-up.svg" wdith="11" height="10" alt="Сортировка от меньшего к большему"></a></li>
+                <li><a href="#"><img src="img/arrow-down.svg" wdith="11" height="10" alt="Сортировка от большего к меньшему"></a></li>
+              </ul>
+            </li>
+          </ul>
+      </section>
+    -->
+
+      <section>
+        <h2 class="visually-hidden">Список вариантов жилья</h2>
         <ul>
           <li>
-            <img src="img/hotel-1.jpg" width="135" height="90" alt="Фото гостиницы «Amara Resort & Spa»" >
+            <img src="img/hotel-1.jpg" width="135" height="90" alt="Фото гостиницы «Amara Resort & Spa»">
             <div>
               <a href="hotel-info/amara-resort-and-spa.html">
                 <h3>Amara Resort & Spa</h3>
