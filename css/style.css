@@ -11,6 +11,23 @@ body {
   text-transform: uppercase;
 }
 
+.visually-hidden,
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -89,11 +106,6 @@ a {
   background-color: #ffffff;
 }
 
-
-
-/*
-
-
 .features-head,
 .features-item h3 {
   font-size: 21px;
@@ -124,11 +136,6 @@ a {
 .features-text:nth-child(2) h3 {
   color: #ffffff;
 }
-
-
-*/
-
-
 
 .hotel-search-head {
   font-size: 30px;
@@ -242,9 +249,8 @@ button.search-form-btn:active {
   opacity: 30%;
 }
 
-
 /* hotels.html*/
-/* Блоки для второго пулреквеста
+
 .filter {
   background-color: #437aa3;
   background-image: url("../img/filter-background.jpg");
@@ -350,7 +356,6 @@ button.search-form-btn:active {
 .arrow-active {
 
 }
-*/
 
 .hotels {
   padding: 1px 0;
@@ -428,32 +433,16 @@ button.search-form-btn:active {
   background-color: #503e33;
 }
 
-
-/*
 .star-range {
   font-size: 0;
   background-image: url("../img/star.svg");
   background-repeat: repeat-x;
 }
-*/
+
 .raiting {
   font-size: 14px;
   line-height: 21px;
   color: #666666;
 
   background-color: #f2f2f2;
-}
-
-
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
