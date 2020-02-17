@@ -27,58 +27,90 @@
         <section class="hotels-filter">
           <h2 class="visually-hidden">Фильтр жилья</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="filter-fieldset">
-              <legend class="filter-head">Инфраструктура:</legend>
-              <ul class="filter-checkbox">
-                <li class="fliter-checkbox-item"><input id="filter-pool" type="checkbox" value="pool" name="hotel-amenities" checked> <label for="filter-pool">Бассейн</label></li>
-                <li class="fliter-checkbox-item"><input id="filter-parking" type="checkbox" value="parking" name="hotel-amenities"> <label for="filter-parking">Парковка</label></li>
-                <li class="fliter-checkbox-item"><input id="filter-wifi" type="checkbox" value="wi-fi" name="hotel-amenities"> <label for="filter-wifi">Wi-fi</label></li>
-              </ul>
-            </fieldset>
-            <fieldset class="filter-fieldset">
-              <legend class="filter-head">Тип жилья:</legend>
-              <ul class="filter-checkbox">
-                <li class="fliter-checkbox-item"><input id="filter-hotel" type="checkbox" value="hotel" name="hotel-type" checked> <label for="filter-hotel">Гостиница</label></li>
-                <li class="fliter-checkbox-item"><input id="filter-hostel" type="checkbox" value="hostel" name="hotel-type" checked> <label for="filter-hostel">Отель</label></li>
-                <li class="fliter-checkbox-item"><input id="filter-apartment" type="checkbox" value="apartment" name="hotel-type" checked> <label for="filter-apartment">Апартаменты</label></li>
-              </ul>
-            </fieldset>
-            <div class="filter-ranger-wrapper">
+            <div class="fieldset-wrap">
+              <fieldset class="filter-fieldset filter-fieldset_left">
+                <legend class="filter-head">Инфраструктура:</legend>
+                <ul class="filter-checkbox">
+                  <li class="filter-checkbox-item">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-pool" type="checkbox" value="pool" name="hotel-amenities" checked>
+                    <label for="filter-pool">Бассейн</label>
+                  </li>
+                  <li class="filter-checkbox-item">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-parking" type="checkbox" value="parking" name="hotel-amenities">
+                    <label for="filter-parking">Парковка</label>
+                  </li>
+                  <li class="filter-checkbox-item filter-checkbox_last">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-wifi" type="checkbox" value="wi-fi" name="hotel-amenities">
+                    <label for="filter-wifi">Wi-fi</label>
+                  </li>
+                </ul>
+              </fieldset>
               <fieldset class="filter-fieldset">
-                <legend class="filter-head">Стоимость в сутки:</legend>
-                  <div class="range-output">
-                    <div class="">
-                      <input class="range-output-field" id="filter-min" type="number" value="0" name="min"> <label class="visually-hidden" for="filter-min">Минимальная стоимость</label>
-                    </div>
-                    <div class="">
-                      <input class="range-output-field" id="filter-max" type="number" value="3000" name="max"> <label class="visually-hidden" for="filter-max">Максимальная стоимость</label>
-                    </div>
-                  </div>
-                  <div class="range-slider">
-                    <div class="range-slider-pin range-slider-pin-min"></div>
-                    <div class="range-slider-pin range-slider-pin-max"></div>
-                  </div>
-                </fieldset>
-              <button class="filter-btn" type="submit">Показать</button>
+                <legend class="filter-head">Тип жилья:</legend>
+                <ul class="filter-checkbox">
+                  <li class="filter-checkbox-item">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-hotel" type="checkbox" value="hotel" name="hotel-type" checked>
+                    <label for="filter-hotel">Гостиница</label>
+                  </li>
+                  <li class="filter-checkbox-item">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-hostel" type="checkbox" value="hostel" name="hotel-type" checked>
+                    <label for="filter-hostel">Мотель</label>
+                  </li>
+                  <li class="filter-checkbox-item filter-checkbox_last">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-apartment" type="checkbox" value="apartment" name="hotel-type" checked>
+                    <label for="filter-apartment">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
+
+            <fieldset class="filter-fieldset filter-range">
+              <legend class="filter-head range-head">Стоимость в сутки (p):</legend>
+                <div class="range-output">
+                  <label class="min-price" for="filter-min">от <input class="range-output-field" id="filter-min" type="number" value="0" min="0" step="100" max="2900" name="min-price"></label>
+                  <label class="max-price" for="filter-max">до <input class="range-output-field" id="filter-max" type="number" value="3000" min="200" step="100" max="3000" name="max-price"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="range-scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="filter-btn" type="submit">Показать</button>
+              </fieldset>
+
           </form>
         </section>
 
         <section class="hotels-sorting">
           <h2 class="visually-hidden">Сортировка вариантов жилья</h2>
+          <div class="hotels-sorting_left">
             <p class="hotels-sorting-head">Найдено: <span class="sorting-result">3</span></p>
             <p class="sorting-types-head">Сортировка:</p>
             <ul class="sorting-types">
-              <li><a class="sorting-active">По цене</a></li>
-              <li><a class="sorting-inactive" href="#">По типу</a></li>
-              <li><a class="sorting-inactive" href="#">По рейтингу</a></li>
-              <li>
-                <ul class="sorting-arrows">
-                  <li><a class="arrow-inactive" href="#"><img src="img/arrow-up.svg" width="11" height="10" alt="Сортировка от меньшего к большему"></a></li> <!--Опять же не знаю как раскрасить свг при активности-->
-                  <li><a class="arrow-active"><img src="img/arrow-down.svg" width="11" height="10" alt="Сортировка от большего к меньшему"></a></li>
-                </ul>
-              </li>
+              <li><a class="sorting-item sorting-active">По цене</a></li>
+              <li><a class="sorting-item sorting-inactive" href="#">По типу</a></li>
+              <li><a class="sorting-item sorting-inactive" href="#">По рейтингу</a></li>
             </ul>
+          </div>
+          <ul class="sorting-arrows">
+            <li>
+              <a class="arrow-inactive" href="#">
+                <svg fill="#cacaca" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 0L0 10h11z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="arrow-active">
+                <svg fill="#cacaca" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 10L0 0h11"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
         </section>
 
         <section class="hotels">
@@ -92,7 +124,7 @@
                     <h3 class="hotel-item-head">Amara Resort & Spa</h3>
                   </a>
                   <div class="hotel-item-details">
-                    <span>Гостиница</span>
+                    <span class="hotel-type">Гостиница</span>
                     <span>От 4000 Р.</span>
                   </div>
                   <div class="hotel-item-btns">
@@ -102,7 +134,9 @@
                 </div>
               </div>
               <div class="hotel-item-rate">
-                <span class="star-range">4 звезды из 5</span><!--не знаю как оформить-->
+                <div class="star-range star-ammount_four">
+                  <span class="visually-hidden">4 звезды из 5</span>
+                </div>
                 <span class="raiting">Рейтинг: 8,5</span>
               </div>
             </li>
@@ -114,7 +148,7 @@
                     <h3 class="hotel-item-head">Desert Quail Inn</h3>
                   </a>
                   <div class="hotel-item-details">
-                    <span>Мотель</span>
+                    <span class="hotel-type">Мотель</span>
                     <span>От 3000 Р.</span>
                   </div>
                   <div class="hotel-item-btns">
@@ -124,7 +158,9 @@
                 </div>
               </div>
               <div class="hotel-item-rate">
-                <span class="star-range">3 звезды из 5</span><!--не знаю как оформить-->
+                <div class="star-range star-ammount_three">
+                  <span class="visually-hidden">3 звезды из 5</span>
+                </div>
                 <span class="raiting">Рейтинг: 8,9</span>
               </div>
             </li>
@@ -135,8 +171,8 @@
                   <a class="hotel-name" href="hotel-info/villas-at-poco-diablo.html">
                     <h3 class="hotel-item-head">Villas at Poco Diablo</h3>
                   </a>
-                  <div class="hotel-list-info">
-                    <span>Апартаменты</span>
+                  <div class="hotel-item-details">
+                    <span class="hotel-type">Апартаменты</span>
                     <span>От 2000 Р.</span>
                   </div>
                   <div class="hotel-item-btns">
@@ -146,7 +182,9 @@
                 </div>
               </div>
               <div class="hotel-item-rate">
-                <span class="star-range">2 звезды из 5</span><!--не знаю как оформить-->
+                <div class="star-range star-ammount_two">
+                  <span class="visually-hidden">2 звезды из 5</span>
+                </div>
                 <span class="raiting">Рейтинг: 9,2</span>
               </div>
             </li>
@@ -154,7 +192,7 @@
         </section>
       </main>
 
-      <footer class="main-footer">
+      <footer class="main-footer hotels-footer">
         <div class="main-footer-item main-footer-contacts">
           <span class="footer-hashtag">#visitSEDONA</span>
           <p class="footer-text">Тел: <a class="footer-phone" href="tel:+74956660266">+7(495) 666-02-66</a></p>

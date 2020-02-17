@@ -34,50 +34,50 @@
           <ol class="features-list">
             <li class="features-detailed">
               <div class="features-detailed-box">
-                <div class="features-item-text">
-                  <h3 class="features-item-head">Настоящий городок</h3>
-                  <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <div class="features-item-content">
+                  <h3 class="features-item-head features-item-head_first">Настоящий городок</h3>
+                  <p class="features-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
                 <img src="img/cityview-1.jpg" width="800" height="256" alt="Вид города Седона изнутри">
               </div>
               <ul class="features-recommend-list">
                 <li class="features-recommend-item">
-                  <h3 class="features-item-head">Жильё</h3>
-                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  <h3 class="features-item-head features-recommend_first">Жильё</h3>
+                  <p class="features-item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
                 <li class="features-recommend-item">
-                  <h3 class="features-item-head">Еда</h3>
-                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <h3 class="features-item-head features-recommend_second">Еда</h3>
+                  <p class="features-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="features-recommend-item">
-                  <h3 class="features-item-head">Сувениры</h3>
-                  <p>Не только китайского, но и местного производства!</p>
+                  <h3 class="features-item-head features-recommend_third">Сувениры</h3>
+                  <p class="features-item-text">Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
             </li>
             <li class="features-detailed">
               <div class="features-detailed-box">
                 <img src="img/cityview-2.jpg" width="800" height="256" alt="Вид на мост Дьявола">
-                <div class="features-item-text">
-                  <h3 class="features-item-head">Там есть<br>
+                <div class="features-item-content features-item-conent_detailed">
+                  <h3 class="features-item-head features-item-head_second">Там есть<br>
                     Мост дьявола</h3>
-                  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                  <p class="features-item-text ">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
               </div>
             </li>
             <li>
               <ul class="features-item-wrapper">
                 <li class="features-item">
-                  <h3 class="features-item-head">Небольшая площадь</h3>
-                  <p>Все достопримечательности находятся очень близко</p>
+                  <h3 class="features-item-head features-item-head_third">Небольшая площадь</h3>
+                  <p class="features-item-text">Все достопримечательности находятся очень близко</p>
                 </li>
                 <li class="features-item">
-                  <h3 class="features-item-head">Красивая дорога</h3>
-                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                  <h3 class="features-item-head features-item-head_fourth">Красивая дорога</h3>
+                  <p class="features-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
                 <li class="features-item">
-                  <h3 class="features-item-head">Мало туристов</h3>
-                  <p>Большинство едет в гранд каньон и толпится там</p>
+                  <h3 class="features-item-head features-item-head_fifth">Мало туристов</h3>
+                  <p class="features-item-text features-item-text_wrap">Большинство едет в гранд каньон и толпится там</p>
                 </li>
               </ul>
             </li>
@@ -90,30 +90,52 @@
           <p class="index-search-text">Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="search-popup-btn" type="button">Поиск гостиницы в Седоне</button>
-          <img src="img/map.png" width="1200" height="594" alt="Карта города Седона">
           <form class="index-search-form" action="https://echo.htmlacademy.ru" method="get">
             <div class="form-item-wrapper">
-              <label for="hotel-checkin">Дата заезда:</label> <input class="hotel-date" id="hotel-checkin" type="text" name="startdate" placeholder="24 АПРЕЛЯ 2017"> <!-- Cделать ховеры -->
+              <label for="hotel-checkin">Дата заезда:</label>
+              <div class="date-field">
+                  <input class="hotel-date" id="hotel-checkin" type="text" name="startdate" placeholder="24 АПРЕЛЯ 2017">
+                  <button class="form-calendar" type="button">
+                    <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                        <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
+                        <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                    </svg>
+                  </button>
+              </div>
             </div>
             <div class="form-item-wrapper">
-              <label for="hotel-checkout">Дата выезда:</label> <input class="hotel-date" id="hotel-checkout" type="text" name="enddate" placeholder="4 ИЮЛЯ 2017"> <!-- Cделать ховеры -->
+              <label for="hotel-checkout">Дата выезда:</label>
+              <div class="date-field">
+                <input class="hotel-date" id="hotel-checkout" type="text" name="enddate" placeholder="4 ИЮЛЯ 2017">
+                <button class="form-calendar" type="button">
+                  <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                      <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
+                      <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                </button>
+              </div>
             </div>
             <div class="form-item-wrapper">
               <div class="form-persons-wrapper">
                 <label for="hotel-adults">Взрослые:</label>
-                <!--<button type="button">-</button> Сделать рендж с кнопочками  -->
-                <input class="hotel-persons" id="hotel-adults" type="number" name="adults" min="1" step="1" value="2">
-                <!--<button type="button">+</button>Сделать рендж с кнопочками  -->
+                <div class="persons-number">
+                  <button class="form-persons_minus" type="button">-</button>
+                  <input class="hotel-persons" id="hotel-adults" type="number" name="adults" min="1" step="1" value="2">
+                  <button class="form-persons_plus" type="button">+</button>
+                </div>
               </div>
               <div class="form-persons-wrapper persons-wrapper-children">
                 <label for="hotel-children">Дети:</label>
-                <!--<button type="button">-</button>    Сделать рендж с кнопочками  -->
-                <input class="hotel-persons" id="hotel-children" type="number" name="children" min="0" step="1" value="0">
-                <!--<button type="button">+</button>Сделать рендж с кнопочками  -->
+                <div class="persons-number">
+                  <button class="form-persons_minus" type="button">-</button>
+                  <input class="hotel-persons" id="hotel-children" type="number" name="children" min="0" step="1" value="0">
+                  <button class="form-persons_plus" type="button">+</button>
+                </div>
               </div>
             </div>
             <button class="search-form-btn" type="submit">Найти</button>
           </form>
+          <img src="img/map.png" width="1200" height="594" alt="Карта города Седона">
+
         </section>
       </main>
 
