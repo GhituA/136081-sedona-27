@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/normalise.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -14,10 +14,18 @@
         </a>
         <nav class="main-navigation">
           <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a href="info.html">Информация</a></li>
-            <li class="main-navigation__item"><a href="media.html">Фото и видео</a></li>
-            <li class="main-navigation__item main-navigation__item--right"><a href="map.html">Карта штата</a></li>
-            <li class="main-navigation__item main-navigation__item--right"><a href="hotels.html">Гостиницы</a></li>
+            <li>
+              <ul class="main-navigation__item-wrap">
+                <li class="main-navigation__item"><a href="info.html">Информация</a></li>
+                <li class="main-navigation__item"><a href="media.html">Фото и видео</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="main-navigation__item-wrap main-navigation__item-wrap--right">
+                <li class="main-navigation__item"><a href="map.html">Карта штата</a></li>
+                <li class="main-navigation__item"><a href="hotels.html">Гостиницы</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </header>
@@ -183,8 +191,8 @@
         </div>
       </footer>
     </div>
-    <script src="js/form.js"></script>
-    <script src="js/map.js"></script>
+    <script src="js/form-min.js"></script>
+    <script src="js/map-min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk6uBmJpjAaLIfkYjehWvMqWQktKwuESw&callback=initMap">
     </script>
   </body>

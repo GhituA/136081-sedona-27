@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Поиск жилья в городе Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -14,10 +14,18 @@
         </a>
         <nav class="main-navigation">
           <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a href="info.html">Информация</a></li>
-            <li class="main-navigation__item"><a href="media.html">Фото и видео</a></li>
-            <li class="main-navigation__item main-navigation__item--right"><a href="map.html">Карта штата</a></li>
-            <li class="main-navigation__item main-navigation__item--right"><a class="nav-active">Гостиницы</a></li>
+            <li>
+              <ul class="main-navigation__item-wrap">
+                <li class="main-navigation__item"><a href="info.html">Информация</a></li>
+                <li class="main-navigation__item"><a href="media.html">Фото и видео</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="main-navigation__item-wrap main-navigation__item-wrap--right">
+                <li class="main-navigation__item"><a href="map.html">Карта штата</a></li>
+                <li class="main-navigation__item"><a class="nav-active">Гостиницы</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </header>
@@ -66,7 +74,7 @@
             <fieldset class="hotels-form__fieldset hotels-form__fieldset--range">
               <legend class="hotels-form__fieldset-head hotels-form__fieldset-head--range">Стоимость в сутки (p):</legend>
                 <div class="hotels-form__range-box">
-                  <label class="hotels-form__range-min" for="filter-min">от <input class="hotels-form__range-field" id="filter-min" type="number" value="0" min="0" step="100" max="2900" name="min-price"aria-label="Минимальная цена"></label>
+                  <label class="hotels-form__range-min" for="filter-min">от <input class="hotels-form__range-field" id="filter-min" type="number" value="0" min="0" step="100" max="2900" name="min-price" aria-label="Минимальная цена"></label>
                   <label class="hotels-form__range-max" for="filter-max">до <input class="hotels-form__range-field" id="filter-max" type="number" value="3000" min="200" step="100" max="3000" name="max-price" aria-label="Максимальная цена"></label>
                 </div>
                 <div class="hotels-form__range-controls">
@@ -109,7 +117,6 @@
                 </a>
               </li>
             </ul>
-
           </div>
         </section>
 
