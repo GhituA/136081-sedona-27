@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("PT Sans"), local("PTSans-Regular"), url("../css/ptsans.woff2") format("woff2"), url("../css/ptsans.woff") format("woff");
+  src: local("PT Sans"), local("PTSans-Regular"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
 }
 /* cyrillic */
 @font-face {
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("PT Sans Bold"), local("PTSans-Bold"), url("../css/ptsansbold.woff2") format("woff2"), url("../css/ptsansbold.woff") format("woff");
+  src: local("PT Sans Bold"), local("PTSans-Bold"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
 
 body {
@@ -718,8 +718,7 @@ a {
   background-color: #5496bd;
 }
 
-#map {
-  position: relative;
+.index-map {
   width: 1200px;
   height: 598px;
 
@@ -727,12 +726,6 @@ a {
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.index-search__map {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .main-footer {
@@ -743,7 +736,6 @@ a {
   padding: 32px 0;
 
   color: #000000;
-
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -1270,7 +1262,7 @@ a {
 }
 
 .hotels-item__type {
-  width: 116px;
+  min-width: 116px;
   padding-right: 20px;
 
   word-wrap: break-word;
